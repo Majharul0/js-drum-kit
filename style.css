@@ -1,0 +1,79 @@
+:root{
+  --color1:#14A1FD;
+  --color2:#6119B9;
+  --color3:#C6A61E;
+  --color4:#BEE8FB;
+  --color5:#13C082;
+  --color6:#e2c75f;
+  --color7:#E07D03;
+  --color8:#CF7B6D;
+  --color9:#6FB0BA;
+}
+
+html {
+  font-size: 10px;
+  /* background: url('./background.jpg') bottom center; */
+  /* background-size: cover; */
+  background-color:#000;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+.musicName{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30vw;
+  line-height: 0;
+  color: rgba(255, 255, 255, 0.277);
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  text-transform: capitalize;
+}
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 300;
+}
+
+.key {
+  border: .4rem solid rgba(255, 255, 255, 0.191);
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .2rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.058);
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffffff;
+  box-shadow: 0 0 1rem #ffffff;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
